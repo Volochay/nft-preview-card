@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFT Preview Card</title>
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./preview.css">
 </head>
 <body>
 
-    <div class="card">
-
+    <main class="card">
         <div class="image-box">
-            <img class="nft-img" src="./images/image-equilibrium.jpg" alt="NFT">
-            
+            <img class="nft-img" src="./images/image-equilibrium.jpg" alt="Equilibrium NFT">
+
             <div class="overlay">
-                <img src="./images/icon-view.svg" alt="View">
+                <img src="./images/icon-view.svg" alt="">
             </div>
         </div>
 
@@ -26,18 +31,24 @@
         </p>
 
         <div class="info">
-            <span class="price">0.041 ETH</span>
-            <span class="time">3 days left</span>
+            <div class="price">
+                <img src="./images/icon-ethereum.svg" alt="">
+                <span>0.041 ETH</span>
+            </div>
+
+            <div class="time">
+                <img src="./images/icon-clock.svg" alt="">
+                <span>3 days left</span>
+            </div>
         </div>
 
-        <hr>
+        <div class="line"></div>
 
         <div class="author">
-            <img class="avatar" src="./images/image-avatar.png" alt="Avatar">
-            <span>Creation of <strong>Jules Wyvern</strong></span>
+            <img class="avatar" src="./images/image-avatar.png" alt="Jules Wyvern">
+            <p>Creation of <span>Jules Wyvern</span></p>
         </div>
-
-    </div>
+    </main>
 
 </body>
 </html>
